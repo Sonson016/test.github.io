@@ -31,7 +31,8 @@
 <h2>My Favorite genre &#9824 </h2>
 <ol type ="A">
 <li>combat</li>
-<lil>romance</li>
+<ol type ="B">
+<li>romance</li>
 </ol>
 <section>
 
