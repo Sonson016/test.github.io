@@ -1,1 +1,149 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Favorite Things</title>
+
+   <style>
+      h1 {
+         color: blue;
+         background-color: red;
+      }
+
+      body {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+      }
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+
+      a {
+         color: darkblue;
+      }
+
+      a:focus {
+         outline: 3px solid orange;
+      }
+
+      table {
+         border-collapse: collapse;
+      }
+
+      th, td {
+         border: 1px solid black;
+         padding: 8px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <header>
+      <h1>My Favorite Things</h1>
+
+      <p>
+         Welcome to my webpage about my favorite movies,
+         Kdramas, and classes.
+      </p>
+
+      <nav aria-label="Main navigation">
+         <a href="#movies">My Favorite Movies</a> |
+         <a href="#genres">My Favorite Genres</a> |
+         <a href="#classes">My Class Schedule</a>
+      </nav>
+   </header>
+
+   <main>
+
+      <section id="movies">
+         <h2>My Favorite Movies</h2>
+
+         <p>
+            I love watching movies when I get the chance to.
+            Now I'm into <strong>Kdramas</strong>, including
+            both <em>movies and series</em>.
+         </p>
+
+         <p>
+            Visit
+            <a href="https://www.thereviewgeek.com/kdramas-2026-releasedate/">
+               The Review Geek Kdramas
+            </a>
+            to learn more about Kdramas.
+         </p>
+
+         <p>
+            <a href="https://github.com/Sonson016/test.github.io/blob/main/accessibility.html">
+               Read my Accessibility Considerations
+            </a>
+         </p>
+
+         <h3>My Favorite Movie</h3>
+
+         <img
+            src="Krama.jpg"
+            width="200"
+            height="200"
+            alt="A Kdrama movie poster">
+
+         <h3>My Favorite Ones</h3>
+
+         <ul>
+            <li>Teach You a Lesson</li>
+            <li>Vincenzo</li>
+            <li>The Whirlwind</li>
+         </ul>
+      </section>
+
+      <section id="genres">
+         <h2>My Favorite Genres</h2>
+
+         <ol>
+            <li>Combat</li>
+            <li>Romance</li>
+         </ol>
+      </section>
+
+      <section id="classes">
+         <h2>My Class Schedule</h2>
+
+         <table>
+            <caption>
+               My weekly class schedule
+            </caption>
+
+            <thead>
+               <tr>
+                  <th scope="col">Days</th>
+                  <th scope="col">Class</th>
+               </tr>
+            </thead>
+
+            <tbody>
+               <tr>
+                  <td>Saturday, Sunday</td>
+                  <td>Website Development</td>
+               </tr>
+
+               <tr>
+                  <td>Monday, Tuesday</td>
+                  <td>Software Development</td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+
+   </main>
+
+   <footer>
+      <p>&copy; 2026 My Favorite Things</p>
+   </footer>
+
+</body>
+</html>
