@@ -1,2 +1,10 @@
 
 h1 { color; red }
+p { background-color; bleu;
+   color: yellow;
+  }
+ul, ol {
+  background-color: gray;
+  color: white;
+  front-weight: bold;
+}
