@@ -1,1 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>About Us - Haiti</title>
+
+   <link rel="stylesheet" href="stylesheets.css">
+</head>
+
+<body>
+
+   <header>
+      <h1>About Us</h1>
+
+      <nav aria-label="Main navigation">
+         <a href="index.html">Home</a>
+         <a href="accessibility.html">Accessibility</a>
+         <a href="aboutus.html">About Us</a>
+      </nav>
+   </header>
+
+   <main>
+
+      <section>
+         <h2>About Our Website</h2>
+
+         <p>
+            Welcome to our Haiti website. This website was created to share
+            information about Haiti, including its history, culture,
+            countryside, food, and beautiful places to visit.
+         </p>
+      </section>
+
+      <section>
+         <h2>Our Purpose</h2>
+
+         <p>
+            Our purpose is to help visitors learn more about Haiti and
+            discover some of the country's important historical locations
+            and natural attractions.
+         </p>
+      </section>
+
+      <section>
+         <h2>What You Can Find Here</h2>
+
+         <ul>
+            <li>Information about Haiti's history</li>
+            <li>Historical places to visit</li>
+            <li>Beautiful countryside locations</li>
+            <li>Information about Haitian culture</li>
+            <li>Travel ideas and attractions</li>
+         </ul>
+      </section>
+
+      <section>
+         <h2>Our Commitment to Accessibility</h2>
+
+         <p>
+            We want this website to be accessible to everyone. We use
+            descriptive alternative text for images, organized headings,
+            readable text, and descriptive links to make the website easier
+            to navigate.
+         </p>
+
+         <p>
+            <a href="accessibility.html">
+               Learn more about our accessibility features
+            </a>
+         </p>
+      </section>
+
+      <section>
+         <h2>Contact Us</h2>
+
+         <p>
+            Thank you for visiting our website and learning more about Haiti.
+            We hope you enjoy exploring the information and discovering
+            more about the country.
+         </p>
+      </section>
+
+   </main>
+
+   <footer>
+      <p>
+         <a href="index.html">Return to Home Page</a>
+      </p>
+   </footer>
+
+</body>
+
+</html>
+```
 
