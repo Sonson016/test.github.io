@@ -10,8 +10,9 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 100px;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px auto 30px auto;
     padding: 20px;
     background-color: #eeeeee;
 }
