@@ -24,7 +24,6 @@
 
    <main>
 
-      <!-- Introduction -->
       <section>
          <h2>Making My Website Accessible</h2>
 
@@ -37,17 +36,21 @@
       </section>
 
 
-      <!-- Sound and Screen Description -->
       <section>
-         <h2>Sound and Screen Description</h2>
+         <h2>Sound, Screen Description, and Page Reading</h2>
 
          <p>
-            This website provides a sound and screen description option for
-            visitors who prefer to listen to the information instead of reading it.
+            This website provides accessibility options that allow visitors
+            to listen to information on the page. Users can choose to hear
+            a description of the page or have the page text read aloud.
          </p>
 
+         <button type="button" onclick="readDescription()">
+            🔊 Read Screen Description
+         </button>
+
          <button type="button" onclick="readPage()">
-            🔊 Read Page Description
+            📖 Read This Page
          </button>
 
          <button type="button" onclick="stopReading()">
@@ -55,13 +58,12 @@
          </button>
 
          <p>
-            The Read Page Description button uses your device's text-to-speech
-            feature to read an accessibility description of this webpage.
+            The screen description provides a summary of the page, while the
+            page reading option reads the written content on the page aloud.
          </p>
       </section>
 
 
-      <!-- Audio Description -->
       <section>
          <h2>Audio Description</h2>
 
@@ -76,13 +78,12 @@
          </audio>
 
          <p>
-            If the audio file is not available, the Read Page Description
-            button above can be used instead.
+            If the audio file is not available, the Read Screen Description
+            or Read This Page buttons can be used instead.
          </p>
       </section>
 
 
-      <!-- Accessibility Features -->
       <section>
          <h2>Accessibility Features</h2>
 
@@ -124,7 +125,6 @@
       </section>
 
 
-      <!-- Accessible Images -->
       <section>
          <h2>Example of Accessible Images</h2>
 
@@ -146,7 +146,6 @@
       </section>
 
 
-      <!-- WCAG -->
       <section>
          <h2>WCAG Guidelines</h2>
 
@@ -169,30 +168,42 @@
    </footer>
 
 
-   <!-- Screen Description Script -->
    <script>
-      function readPage() {
+      function readDescription() {
 
          const description =
-            "Welcome to the Haiti website accessibility page. " +
-            "This page explains how the website is designed to be accessible. " +
-            "The website includes alternative text for images, keyboard navigation, " +
-            "readable text, proper headings, descriptive links, and color contrast. " +
-            "There is also a sound and screen description option. " +
-            "You can use the audio player to listen to an audio description. " +
-            "The page also provides information about Web Content Accessibility Guidelines.";
+            "This is the Accessibility Considerations page for the Haiti website. " +
+            "The page explains accessibility features including alternative text, " +
+            "keyboard navigation, readable text, proper headings, descriptive links, " +
+            "color contrast, sound descriptions, and page reading.";
 
-         const speech = new SpeechSynthesisUtterance(description);
+         speakText(description);
+      }
+
+
+      function readPage() {
+
+         const pageText = document.querySelector("main").innerText;
+
+         speakText(pageText);
+      }
+
+
+      function speakText(text) {
+
+         window.speechSynthesis.cancel();
+
+         const speech = new SpeechSynthesisUtterance(text);
 
          speech.rate = 1;
          speech.pitch = 1;
 
-         window.speechSynthesis.cancel();
          window.speechSynthesis.speak(speech);
       }
 
 
       function stopReading() {
+
          window.speechSynthesis.cancel();
       }
    </script>
