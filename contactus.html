@@ -1,72 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<form action="#" method="post">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website Project</title>
-    <link rel="stylesheet" href="stylesheets.css">
-</head>
+    <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name">
+    </p>
 
-<body>
+    <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+    </p>
 
-    <nav class="navbar">
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="accessibility.html">Accessibility Considerations</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-        </ul>
-    </nav>
+    <p>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone">
+    </p>
 
-    <main>
-        <h1>Contact Us</h1>
+    <p>
+        <label for="country">What country are you located in?</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select your country --</option>
+            <option value="Haiti">Haiti</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="France">France</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
 
-        <h2 style="color:green;">
-            Below are different ways to reach us
-        </h2>
+    <p>
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="6" cols="50"
+            placeholder="Please enter your feedback here"></textarea>
+    </p>
 
-        <ul>
-            <li>Email: haitiwebsite@example.com</li>
-            <li>Phone: (555) 555-5555</li>
-            <li>Facebook: Haiti Travel and Culture</li>
-        </ul>
+    <p>
+        <input type="submit" value="Submit Feedback">
+    </p>
 
-        <h2>Send Us Your Feedback</h2>
-
-        <form action="#" method="post">
-
-            <p>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name">
-            </p>
-
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email">
-            </p>
-
-            <p>
-                <label for="phone">Phone:</label><br>
-                <input type="tel" id="phone" name="phone">
-            </p>
-
-            <p>
-                <label for="feedback">Feedback:</label><br>
-                <textarea id="feedback" name="feedback" rows="6" cols="50"></textarea>
-            </p>
-
-            <p>
-                <input type="submit" value="Submit Feedback">
-            </p>
-
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Haiti Website Project</p>
-    </footer>
-
-</body>
-
-</html>
+</form>
