@@ -65,7 +65,7 @@
                     What country are you located in?
                 </label><br>
 
-                <select id="country" name="country">
+                <select id="country" name="country" onchange="showOtherCountry()">
                     <option value="">-- Select your country --</option>
                     <option value="Haiti">Haiti</option>
                     <option value="United States">United States</option>
@@ -86,8 +86,22 @@
                 </select>
             </p>
 
+            <!-- This box appears when Other is selected -->
+            <p id="otherCountryBox" style="display:none;">
+                <label for="otherCountry">
+                    Please enter the country you are located in:
+                </label><br>
+
+                <input
+                    type="text"
+                    id="otherCountry"
+                    name="otherCountry"
+                    placeholder="Enter your country">
+            </p>
+
             <p>
                 <label for="feedback">Feedback:</label><br>
+
                 <textarea
                     id="feedback"
                     name="feedback"
@@ -125,12 +139,25 @@
     </footer>
 
     <script>
+
+        function showOtherCountry() {
+            const country = document.getElementById("country");
+            const otherBox = document.getElementById("otherCountryBox");
+
+            if (country.value === "Other") {
+                otherBox.style.display = "block";
+            } else {
+                otherBox.style.display = "none";
+            }
+        }
+
         function readPage() {
             const pageText = document.querySelector("main").innerText;
 
             window.speechSynthesis.cancel();
 
             const speech = new SpeechSynthesisUtterance(pageText);
+
             speech.rate = 1;
             speech.pitch = 1;
 
@@ -140,6 +167,7 @@
         function stopReading() {
             window.speechSynthesis.cancel();
         }
+
     </script>
 
 </body>
