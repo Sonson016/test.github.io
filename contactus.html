@@ -1,42 +1,142 @@
-<form action="#" method="post">
+<!DOCTYPE html>
+<html lang="en">
 
-    <p>
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name">
-    </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Haiti</title>
+    <link rel="stylesheet" href="stylesheets.css">
+</head>
 
-    <p>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email">
-    </p>
+<body>
 
-    <p>
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone">
-    </p>
+    <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="accessibility.html">Accessibility Considerations</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <p>
-        <label for="country">What country are you located in?</label><br>
-        <select id="country" name="country">
-            <option value="">-- Select your country --</option>
-            <option value="Haiti">Haiti</option>
-            <option value="United States">United States</option>
-            <option value="Canada">Canada</option>
-            <option value="Dominican Republic">Dominican Republic</option>
-            <option value="France">France</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Other">Other</option>
-        </select>
-    </p>
+    <main>
+        <h1>Contact Us</h1>
 
-    <p>
-        <label for="feedback">Feedback:</label><br>
-        <textarea id="feedback" name="feedback" rows="6" cols="50"
-            placeholder="Please enter your feedback here"></textarea>
-    </p>
+        <p>
+            <strong>
+                Your feedback is important to us. It helps us know how
+                we can be a better help next time.
+            </strong>
+        </p>
 
-    <p>
-        <input type="submit" value="Submit Feedback">
-    </p>
+        <p>Thank you!!</p>
 
-</form>
+        <h2 style="color:green;">
+            Below are different ways to reach us
+        </h2>
+
+        <ul>
+            <li>Email: haitiwebsite@example.com</li>
+            <li>Phone: (555) 555-5555</li>
+            <li>Facebook: Haiti Travel and Culture</li>
+        </ul>
+
+        <h2>Send Us Your Feedback</h2>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="country">
+                    What country are you located in?
+                </label><br>
+
+                <select id="country" name="country">
+                    <option value="">-- Select your country --</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Dominican Republic">
+                        Dominican Republic
+                    </option>
+                    <option value="France">France</option>
+                    <option value="United Kingdom">
+                        United Kingdom
+                    </option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="feedback">Feedback:</label><br>
+                <textarea
+                    id="feedback"
+                    name="feedback"
+                    rows="6"
+                    cols="50"
+                    placeholder="Please enter your feedback here"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit Feedback">
+            </p>
+
+        </form>
+
+        <section>
+            <h2>Page Reading</h2>
+
+            <p>
+                Use the buttons below to listen to the information on this page.
+            </p>
+
+            <button type="button" onclick="readPage()">
+                🔊 Read This Page
+            </button>
+
+            <button type="button" onclick="stopReading()">
+                ⏹ Stop Reading
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Haiti Website Project</p>
+    </footer>
+
+    <script>
+        function readPage() {
+            const pageText = document.querySelector("main").innerText;
+
+            window.speechSynthesis.cancel();
+
+            const speech = new SpeechSynthesisUtterance(pageText);
+            speech.rate = 1;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+        }
+
+        function stopReading() {
+            window.speechSynthesis.cancel();
+        }
+    </script>
+
+</body>
+
+</html>
