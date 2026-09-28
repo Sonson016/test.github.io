@@ -11,31 +11,43 @@
 
 <body>
 
+   <!-- Skip link for keyboard users -->
+   <a class="skip-link" href="#main-content">Skip to main content</a>
+
    <header>
       <h1>Accessibility Considerations</h1>
 
-      <nav aria-label="Main navigation">
-         <a href="index.html">Home</a>
-         <a href="aboutus.html">About Us</a>
-         <a href="accessibility.html">Accessibility</a>
-         <a href="contactus.html">Contact Us</a>
+      <nav class="navbar" aria-label="Main navigation">
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="accessibility.html">Accessibility Considerations</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+         </ul>
       </nav>
    </header>
 
-   <main>
+   <main id="main-content">
 
+      <!-- Introduction -->
       <section>
          <h2>Making My Website Accessible</h2>
 
          <p>
             I designed my Haiti website with accessibility in mind so that
             different types of users can access and understand the information.
-            I use clear headings, readable text, descriptive links, and organized
-            sections throughout the website.
+            I use clear headings, readable text, descriptive links, alternative
+            text for images, and organized sections throughout the website.
+         </p>
+
+         <p>
+            My goal is to make the website easier to use for visitors with
+            different needs and abilities.
          </p>
       </section>
 
 
+      <!-- Sound and Page Reading -->
       <section>
          <h2>Sound, Screen Description, and Page Reading</h2>
 
@@ -45,17 +57,21 @@
             a description of the page or have the page text read aloud.
          </p>
 
-         <button type="button" onclick="readDescription()">
-            🔊 Read Screen Description
-         </button>
+         <div class="accessibility-controls">
 
-         <button type="button" onclick="readPage()">
-            📖 Read This Page
-         </button>
+            <button type="button" onclick="readDescription()">
+               🔊 Read Screen Description
+            </button>
 
-         <button type="button" onclick="stopReading()">
-            ⏹ Stop Reading
-         </button>
+            <button type="button" onclick="readPage()">
+               📖 Read This Page
+            </button>
+
+            <button type="button" onclick="stopReading()">
+               ⏹ Stop Reading
+            </button>
+
+         </div>
 
          <p>
             The screen description provides a summary of the page, while the
@@ -64,6 +80,7 @@
       </section>
 
 
+      <!-- Audio Description -->
       <section>
          <h2>Audio Description</h2>
 
@@ -84,10 +101,12 @@
       </section>
 
 
+      <!-- Accessibility Features -->
       <section>
          <h2>Accessibility Features</h2>
 
          <ul>
+
             <li>
                <strong>Alternative Text:</strong>
                Images include descriptive alt text so screen readers can
@@ -96,12 +115,13 @@
 
             <li>
                <strong>Keyboard Navigation:</strong>
-               Links can be accessed using the keyboard without requiring a mouse.
+               Links, buttons, and form controls can be accessed using
+               the keyboard without requiring a mouse.
             </li>
 
             <li>
                <strong>Readable Text:</strong>
-               The website uses a readable font size and sufficient spacing
+               The website uses readable text and sufficient spacing
                between sections.
             </li>
 
@@ -121,10 +141,30 @@
                Text and backgrounds are designed to provide enough contrast
                for easier reading.
             </li>
+
+            <li>
+               <strong>Form Labels:</strong>
+               Form fields on the Contact Us page have labels to help
+               visitors understand what information should be entered.
+            </li>
+
+            <li>
+               <strong>Page Reading:</strong>
+               Visitors can use the page-reading button to have the main
+               content read aloud.
+            </li>
+
+            <li>
+               <strong>Screen Description:</strong>
+               Visitors can listen to a short description explaining
+               the purpose and accessibility features of this page.
+            </li>
+
          </ul>
       </section>
 
 
+      <!-- Accessible Images -->
       <section>
          <h2>Example of Accessible Images</h2>
 
@@ -146,6 +186,7 @@
       </section>
 
 
+      <!-- WCAG -->
       <section>
          <h2>WCAG Guidelines</h2>
 
@@ -158,24 +199,45 @@
          </p>
       </section>
 
+
+      <!-- Contact -->
+      <section>
+         <h2>Accessibility Feedback</h2>
+
+         <p>
+            If you have difficulty using this website or have suggestions
+            for improving accessibility, please visit our Contact Us page.
+         </p>
+
+         <p>
+            <a href="contactus.html">Contact Us with accessibility feedback</a>
+         </p>
+      </section>
+
    </main>
 
 
    <footer>
+      <p>
+         &copy; 2026 Haiti Website Project
+      </p>
+
       <p>
          <a href="index.html">Return to the Haiti Home Page</a>
       </p>
    </footer>
 
 
+   <!-- Page Reading JavaScript -->
    <script>
+
       function readDescription() {
 
          const description =
             "This is the Accessibility Considerations page for the Haiti website. " +
-            "The page explains accessibility features including alternative text, " +
+            "This page explains accessibility features including alternative text, " +
             "keyboard navigation, readable text, proper headings, descriptive links, " +
-            "color contrast, sound descriptions, and page reading.";
+            "color contrast, form labels, sound descriptions, and page reading.";
 
          speakText(description);
       }
@@ -183,7 +245,7 @@
 
       function readPage() {
 
-         const pageText = document.querySelector("main").innerText;
+         const pageText = document.querySelector("#main-content").innerText;
 
          speakText(pageText);
       }
@@ -191,21 +253,33 @@
 
       function speakText(text) {
 
-         window.speechSynthesis.cancel();
+         if ("speechSynthesis" in window) {
 
-         const speech = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.cancel();
 
-         speech.rate = 1;
-         speech.pitch = 1;
+            const speech = new SpeechSynthesisUtterance(text);
 
-         window.speechSynthesis.speak(speech);
+            speech.rate = 1;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+
+         } else {
+
+            alert("Text-to-speech is not supported by your browser.");
+
+         }
       }
 
 
       function stopReading() {
 
-         window.speechSynthesis.cancel();
+         if ("speechSynthesis" in window) {
+            window.speechSynthesis.cancel();
+         }
+
       }
+
    </script>
 
 </body>
