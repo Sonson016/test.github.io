@@ -3,42 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us - Haiti</title><!DOCTYPE html>
-<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Haiti</title>
+    <title>Contact Us - Haiti Website</title>
+
     <link rel="stylesheet" href="stylesheets.css">
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
     <header>
-        <h1>Contact Haiti</h1>
 
-        <<header>
+        <h1>Contact Us</h1>
 
-    <nav class="navbar" aria-label="Main navigation">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Haiti</a></li>
-            <li><a href="places.html">Places to Visit</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Haiti</a></li>
+                <li><a href="places.html">Places to Visit</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
 
-</header>
-
+    </header>
 
     <main id="main-content">
 
         <section>
+
             <h2>Contact Us</h2>
 
             <p>
@@ -47,12 +44,13 @@
             </p>
 
             <p>
-                Thank you for visiting our Haiti website!
+                Thank you!
             </p>
+
         </section>
 
-
         <section>
+
             <h2>Ways to Reach Us</h2>
 
             <p>
@@ -60,6 +58,7 @@
             </p>
 
             <ul>
+
                 <li>
                     Email:
                     <a href="mailto:haitiwebsite1804@gmail.com">
@@ -78,103 +77,95 @@
                     Facebook:
                     Haiti Travel and Culture
                 </li>
+
             </ul>
+
         </section>
 
-
         <section>
-            <h2>Send Us Your Feedback</h2>
 
-            <p>
-                Please complete the form below to share your thoughts
-                about our website.
-            </p>
+            <h2>Send Us Your Feedback</h2>
 
             <form action="#" method="post">
 
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required>
-                </p>
+                <label for="name">
+                    Name:
+                </label>
 
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
 
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required>
-                </p>
+                <label for="email">
+                    Email:
+                </label>
 
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
 
-                <p>
-                    <label for="phone">Phone:</label><br>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone">
-                </p>
+                <label for="phone">
+                    Phone:
+                </label>
 
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
 
-                <p>
-                    <label for="country">
-                        What country are you currently located in?
-                    </label><br>
+                <label for="country">
+                    What country are you currently located in?
+                </label>
 
-                    <select
-                        id="country"
-                        name="country"
-                        onchange="showOtherCountry()"
-                        required>
+                <select id="country" name="country" onchange="showOtherCountry()">
 
-                        <option value="">
-                            -- Select your country --
-                        </option>
+                    <option value="">
+                        Select a country
+                    </option>
 
-                        <option value="Haiti">Haiti</option>
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Dominican Republic">
-                            Dominican Republic
-                        </option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="France">France</option>
-                        <option value="United Kingdom">
-                            United Kingdom
-                        </option>
-                        <option value="Spain">Spain</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Italy">Italy</option>
-                        <option value="China">China</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Other">Other</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Dominican Republic">
+                        Dominican Republic
+                    </option>
+                    <option value="France">France</option>
+                    <option value="United Kingdom">
+                        United Kingdom
+                    </option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Other">Other</option>
 
-                    </select>
-                </p>
+                </select>
 
-
-                <p id="otherCountryBox" style="display: none;">
+                <div id="other-country">
 
                     <label for="otherCountry">
                         Please enter your country:
-                    </label><br>
+                    </label>
 
                     <input
                         type="text"
                         id="otherCountry"
                         name="otherCountry"
-                        placeholder="Enter your country">
+                    >
 
-                </p>
-
+                </div>
 
                 <fieldset>
 
@@ -182,377 +173,169 @@
                         How helpful was this website?
                     </legend>
 
-                    <p>
+                    <div class="rating-options">
+
                         <label>
                             <input
                                 type="radio"
                                 name="rating"
                                 value="1"
-                                required>
-                            ★ 1 - Not helpful
+                            >
+                            1
                         </label>
-                    </p>
 
-                    <p>
                         <label>
                             <input
                                 type="radio"
                                 name="rating"
-                                value="2">
-                            ★★ 2 - Slightly helpful
+                                value="2"
+                            >
+                            2
                         </label>
-                    </p>
 
-                    <p>
                         <label>
                             <input
                                 type="radio"
                                 name="rating"
-                                value="3">
-                            ★★★ 3 - Helpful
+                                value="3"
+                            >
+                            3
                         </label>
-                    </p>
 
-                    <p>
                         <label>
                             <input
                                 type="radio"
                                 name="rating"
-                                value="4">
-                            ★★★★ 4 - Very helpful
+                                value="4"
+                            >
+                            4
                         </label>
-                    </p>
 
-                    <p>
                         <label>
                             <input
                                 type="radio"
                                 name="rating"
-                                value="5">
-                            ★★★★★ 5 - Extremely helpful
+                                value="5"
+                            >
+                            5
                         </label>
-                    </p>
+
+                    </div>
 
                 </fieldset>
 
+                <label for="feedback">
+                    Your Feedback:
+                </label>
 
-                <p>
-                    <label for="feedback">
-                        Feedback:
-                    </label><br>
+                <textarea
+                    id="feedback"
+                    name="feedback"
+                    required
+                ></textarea>
 
-                    <textarea
-                        id="feedback"
-                        name="feedback"
-                        rows="6"
-                        placeholder="Please enter your feedback here"
-                        required></textarea>
-                </p>
+                <button type="button" onclick="readPage()">
+                    Read Page
+                </button>
 
+                <button type="button" onclick="stopReading()">
+                    Stop Reading
+                </button>
 
-                <p>
-                    <input
-                        type="submit"
-                        value="Submit Feedback">
-                </p>
+                <input
+                    type="submit"
+                    value="Submit Feedback"
+                >
 
             </form>
+
         </section>
 
-
         <section>
+
             <h2>Accessibility and Page Reading</h2>
 
             <p>
-                Use the buttons below to listen to the information
-                on this page.
+                If you would like to have the page read aloud, use the
+                Read Page button above. The Stop Reading button can be
+                used to stop the speech.
             </p>
 
-            <div class="accessibility-controls">
-
-                <button
-                    type="button"
-                    onclick="readPage()">
-                    🔊 Read This Page
-                </button>
-
-                <button
-                    type="button"
-                    onclick="stopReading()">
-                    ⏹ Stop Reading
-                </button>
-
-            </div>
         </section>
 
     </main>
 
-
     <footer>
-        <p>&copy; 2026 Haiti Website Project</p>
-    </footer>
 
+        <p>&copy; 2026 Haiti Website Project</p>
+
+        <p>
+            <a href="index.html">Home</a>
+        </p>
+
+        <p>
+            <a href="aboutus.html">About Haiti</a>
+        </p>
+
+        <p>
+            <a href="places.html">Places to Visit</a>
+        </p>
+
+        <p>
+            <a href="accessibility.html">
+                Accessibility Considerations
+            </a>
+        </p>
+
+    </footer>
 
     <script>
 
         function showOtherCountry() {
 
             const country =
-                document.getElementById("country");
-
-            const otherBox =
-                document.getElementById("otherCountryBox");
+                document.getElementById("country").value;
 
             const otherCountry =
+                document.getElementById("other-country");
+
+            const otherInput =
                 document.getElementById("otherCountry");
 
-            if (country.value === "Other") {
+            if (country === "Other") {
 
-                otherBox.style.display = "block";
-                otherCountry.required = true;
+                otherCountry.style.display = "block";
+                otherInput.required = true;
 
             } else {
 
-                otherBox.style.display = "none";
-                otherCountry.required = false;
-                otherCountry.value = "";
+                otherCountry.style.display = "none";
+                otherInput.required = false;
 
             }
         }
 
-
         function readPage() {
 
-            const pageText =
+            stopReading();
+
+            const text =
                 document.querySelector("main").innerText;
 
-            window.speechSynthesis.cancel();
-
             const speech =
-                new SpeechSynthesisUtterance(pageText);
-
-            speech.rate = 1;
-            speech.pitch = 1;
-
-            window.speechSynthesis.speak(speech);
-        }
-
-
-        function stopReading() {
-
-            window.speechSynthesis.cancel();
-
-        }
-
-    </script>
-
-</body>
-
-</html>
-    <link rel="stylesheet" href="stylesheets.css">
-</head>
-
-<body>
-
-    <nav class="navbar" aria-label="Main navigation">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="accessibility.html">Accessibility Considerations</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h1>Contact Us</h1>
-
-        <p>
-            <strong>
-                Your feedback is important to us. It helps us know how
-                we can be a better help next time.
-            </strong>
-        </p>
-
-        <p>Thank you!!</p>
-
-        <h2 style="color:green;">
-            Below are different ways to reach us
-        </h2>
-
-        <ul>
-            <li>Email: haitiwebsite1804@gmail.com</li>
-            <li>Phone: (555) 555-5555</li>
-            <li>Facebook: Haiti Travel and Culture</li>
-        </ul>
-
-        <h2>Send Us Your Feedback</h2>
-
-        <form action="#" method="post">
-
-            <p>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name">
-            </p>
-
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email">
-            </p>
-
-            <p>
-                <label for="phone">Phone:</label><br>
-                <input type="tel" id="phone" name="phone">
-            </p>
-
-            <p>
-                <label for="country">
-                    What country are you located in?
-                </label><br>
-
-                <select id="country" name="country" onchange="showOtherCountry()">
-                    <option value="">-- Select your country --</option>
-                    <option value="Haiti">Haiti</option>
-                    <option value="United States">United States</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Dominican Republic">Dominican Republic</option>
-                    <option value="Mexico">Mexico</option>
-                    <option value="Brazil">Brazil</option>
-                    <option value="Jamaica">Jamaica</option>
-                    <option value="Cuba">Cuba</option>
-                    <option value="France">France</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Spain">Spain</option>
-                    <option value="Germany">Germany</option>
-                    <option value="Italy">Italy</option>
-                    <option value="China">China</option>
-                    <option value="Japan">Japan</option>
-                    <option value="Other">Other</option>
-                </select>
-            </p>
-
-            <p id="otherCountryBox" style="display:none;">
-                <label for="otherCountry">
-                    Please enter the country you are located in:
-                </label><br>
-
-                <input
-                    type="text"
-                    id="otherCountry"
-                    name="otherCountry"
-                    placeholder="Enter your country">
-            </p>
-
-            <!-- Star Rating -->
-            <fieldset>
-                <legend>How helpful were we?</legend>
-
-                <p>
-                    <label>
-                        <input type="radio" name="rating" value="1">
-                        ★ 1 - Not helpful
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        <input type="radio" name="rating" value="2">
-                        ★★ 2 - Slightly helpful
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        <input type="radio" name="rating" value="3">
-                        ★★★ 3 - Helpful
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        <input type="radio" name="rating" value="4">
-                        ★★★★ 4 - Very helpful
-                    </label>
-                </p>
-
-                <p>
-                    <label>
-                        <input type="radio" name="rating" value="5">
-                        ★★★★★ 5 - Extremely helpful
-                    </label>
-                </p>
-            </fieldset>
-
-            <p>
-                <label for="feedback">Feedback:</label><br>
-
-                <textarea
-                    id="feedback"
-                    name="feedback"
-                    rows="6"
-                    cols="50"
-                    placeholder="Please enter your feedback here"></textarea>
-            </p>
-
-            <p>
-                <input type="submit" value="Submit Feedback">
-            </p>
-
-        </form>
-
-        <section>
-            <h2>Page Reading</h2>
-
-            <p>
-                Use the buttons below to listen to the information on this page.
-            </p>
-
-            <button type="button" onclick="readPage()">
-                🔊 Read This Page
-            </button>
-
-            <button type="button" onclick="stopReading()">
-                ⏹ Stop Reading
-            </button>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Haiti Website Project</p>
-    </footer>
-
-    <script>
-
-        function showOtherCountry() {
-            const country = document.getElementById("country");
-            const otherBox = document.getElementById("otherCountryBox");
-
-            if (country.value === "Other") {
-                otherBox.style.display = "block";
-            } else {
-                otherBox.style.display = "none";
-            }
-        }
-
-        function readPage() {
-            const pageText = document.querySelector("main").innerText;
-
-            window.speechSynthesis.cancel();
-
-            const speech = new SpeechSynthesisUtterance(pageText);
-
-            speech.rate = 1;
-            speech.pitch = 1;
+                new SpeechSynthesisUtterance(text);
 
             window.speechSynthesis.speak(speech);
         }
 
         function stopReading() {
+
             window.speechSynthesis.cancel();
         }
+
+        showOtherCountry();
 
     </script>
 
 </body>
-
 </html>
