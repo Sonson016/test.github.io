@@ -10,12 +10,18 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #222222;
-    background-color: #ffffff;
+
+    /* Haiti flag background */
+    background-image: url("https://thumbs.dreamstime.com/b/wavy-flag-haiti-blue-red-central-coat-arms-haitian-flag-blue-top-red-below-central-coat-arms-383152675.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Header */
 header {
-    background-color: #003f87;
+    background-color: rgba(0, 63, 135, 0.95);
     color: white;
     text-align: center;
     padding: 25px 20px;
@@ -30,7 +36,7 @@ header h1 {
 
 /* Navigation */
 .navbar {
-    background-color: #d21034;
+    background-color: rgba(210, 16, 52, 0.97);
     padding: 12px;
 }
 
@@ -91,13 +97,14 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.94);
 }
 
 /* Sections */
 section {
     margin-bottom: 30px;
     padding: 22px;
-    background-color: #f5f8fc;
+    background-color: rgba(245, 248, 252, 0.97);
     border-left: 6px solid #003f87;
     border-radius: 6px;
 }
@@ -279,7 +286,7 @@ footer {
     margin-top: 40px;
     padding: 25px 20px;
     text-align: center;
-    background-color: #003f87;
+    background-color: rgba(0, 63, 135, 0.97);
     color: white;
     border-top: 6px solid #d21034;
 }
@@ -291,6 +298,46 @@ footer a {
 footer a:hover,
 footer a:focus {
     color: white;
+}
+
+/* Places page gallery */
+.place-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.place-gallery figure {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.place-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+    border: 2px solid #003f87;
+    border-radius: 5px;
+}
+
+.place-gallery figcaption {
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #444444;
+}
+
+/* Source note */
+.source-note {
+    font-size: 14px;
+    background-color: #f5f8fc;
+    padding: 12px;
+    border-left: 4px solid #d21034;
 }
 
 /* Mobile layout */
@@ -329,5 +376,13 @@ footer a:focus {
     .accessibility-controls button {
         width: 100%;
         margin: 5px 0;
+    }
+
+    .place-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .place-gallery img {
+        height: 200px;
     }
 }
