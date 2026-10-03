@@ -1,465 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Beautiful Destinations in Haiti</title>
+    <title>Places to Visit in Haiti</title>
 
     <link rel="stylesheet" href="stylesheets.css">
+
+    <style>
+        /* Places page image gallery */
+        .place-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .place-gallery figure {
+            margin: 0;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+        }
+
+        .place-gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            margin: 0;
+            border: 2px solid #003f87;
+            border-radius: 5px;
+        }
+
+        .place-gallery figcaption {
+            padding-top: 8px;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #444444;
+        }
+
+        .source-note {
+            font-size: 14px;
+            background-color: #f5f8fc;
+            padding: 12px;
+            border-left: 4px solid #d21034;
+        }
+
+        @media screen and (max-width: 700px) {
+            .place-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .place-gallery img {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Skip link -->
-    <a class="skip-link" href="#main-content">
-        Skip to main content
-    </a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Header -->
     <header>
+        <h1>Places to Visit in Haiti</h1>
 
-        <h1>Beautiful Destinations in Haiti</h1>
-
-        <!-- Navigation -->
         <nav class="navbar" aria-label="Main navigation">
-
             <ul class="nav-links">
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="aboutus.html">About Haiti</a>
-                </li>
-
-                <li>
-                    <a href="places.html">Places to Visit</a>
-                </li>
-
-                <li>
-                    <a href="accessibility.html">Accessibility</a>
-                </li>
-
-                <li>
-                    <a href="contactus.html">Contact</a>
-                </li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Haiti</a></li>
+                <li><a href="places.html">Places to Visit</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="contactus.html">Contact</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-
-    <!-- Main Content -->
     <main id="main-content">
 
-
-        <!-- Introduction -->
         <section>
-
-            <h2>Explore Beautiful Haiti</h2>
-
-            <p>
-                Haiti is known for its mountains, beaches, forests,
-                waterfalls, historic landmarks, caves, and beautiful
-                Caribbean islands. There are many destinations where
-                visitors can experience Haiti's natural beauty and
-                cultural history.
-            </p>
+            <h2>Beautiful Places to Visit in Haiti</h2>
 
             <p>
-                This page highlights nine destinations featured in the
-                Visit Haiti article
-                <em>Nine of the Most Beautiful Destinations in Haiti</em>.
+                Haiti is home to beautiful mountains, forests, waterfalls,
+                caves, beaches, historic buildings, and islands. This page
+                highlights nine beautiful destinations in Haiti.
             </p>
 
-            <p>
-                The destinations include national parks, historic
-                locations, beaches, waterfalls, caves, and islands.
+            <p class="source-note">
+                The destination photographs and photographer credits on this
+                page are from Visit Haiti. Please keep the photo credits and
+                check the original website's image-use terms before reusing
+                the photographs outside of this class project.
             </p>
-
-            <p>
-                <a
-                    href="https://visithaiti.com/destinations/most-beautiful-destinations-in-haiti/"
-                    target="_blank"
-                    rel="noopener">
-                    Read the original Visit Haiti article
-                </a>
-            </p>
-
         </section>
 
 
         <!-- 1. Macaya National Park -->
         <section>
-
             <h2>1. Macaya National Park</h2>
 
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/07/macaya-national-park-haiti-national-trust.jpg"
-                alt="Green rainforest vegetation in Macaya National Park">
-
             <p>
-                Macaya National Park is located in southern Haiti and
-                contains a large area of rainforest and mountain
-                environments.
+                Macaya National Park is located in southwestern Haiti. The
+                park is known for its rainforest, mountains, wildlife, and
+                unique plants. Macaya Peak is one of the highest mountain
+                areas in Haiti and provides opportunities for hiking and
+                exploring nature.
             </p>
 
-            <p>
-                The park is home to plants and wildlife that are unique
-                to Haiti. Visitors interested in nature, hiking,
-                wildlife, and birdwatching can explore the park's
-                natural environment.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                Macaya Peak rises to approximately 2,347 meters and
-                provides a challenging destination for hikers.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/07/macaya-national-park-haiti-national-trust.jpg"
+                        alt="Green rainforest and ferns in Macaya National Park"
+                        loading="lazy">
+                    <figcaption>
+                        Macaya National Park — Photo: Haiti National Trust
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Haiti National Trust /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
         <!-- 2. Cap-Haïtien -->
         <section>
-
             <h2>2. Cap-Haïtien</h2>
 
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/07/cap-haitien-cathedral-jean-oscar-augustin.jpg"
-                alt="Cathedral of Our Lady of the Assumption in Cap-Haïtien">
-
             <p>
-                Cap-Haïtien is one of Haiti's major cities and is
-                located on the northern coast of the country.
+                Cap-Haïtien is one of Haiti's historic cities. Visitors can
+                explore historic buildings, local culture, restaurants,
+                beaches, and the Cathedral of Our Lady of the Assumption.
             </p>
 
-            <p>
-                The city is known for its history, colonial architecture,
-                restaurants, cultural attractions, and nearby beaches.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                Cap-Haïtien is also an important starting point for
-                visitors who want to explore northern Haiti, including
-                historic sites such as Sans-Souci Palace and the
-                Citadelle.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/07/cap-haitien-cathedral-jean-oscar-augustin.jpg"
+                        alt="Cathedral of Our Lady of the Assumption in Cap-Haïtien"
+                        loading="lazy">
+                    <figcaption>
+                        Cap-Haïtien — Photo: Jean Oscar Augustin
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Jean Oscar Augustin /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
-        <!-- 3. Péligre Lake -->
+        <!-- 3. Lake Péligre -->
         <section>
-
-            <h2>3. Péligre Lake</h2>
-
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/07/peligre-lake-franck-fontain-1024x485.jpg"
-                alt="Péligre Lake surrounded by green mountains">
+            <h2>3. The Péligre Lake</h2>
 
             <p>
-                Péligre Lake is located in central Haiti and was created
-                by the Péligre Dam on the Artibonite River.
+                Péligre Lake is surrounded by mountains and green landscapes.
+                The lake was created by the Péligre Dam on the Artibonite
+                River and is an important part of Haiti's scenery.
             </p>
 
-            <p>
-                The lake is surrounded by mountains and vegetation,
-                creating a scenic landscape.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                The area provides visitors with opportunities to see
-                Haiti's mountain scenery and learn about the country's
-                hydroelectric infrastructure.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/07/peligre-lake-franck-fontain-1024x485.jpg"
+                        alt="Péligre Lake surrounded by mountains"
+                        loading="lazy">
+                    <figcaption>
+                        The Péligre Lake — Photo: Franck Fontain
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Franck Fontain /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
         <!-- 4. Forêt des Pins -->
         <section>
-
-            <h2>4. Forêt des Pins &amp; La Selle National Park</h2>
-
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2019/03/foret-des-pins-anton-lau1-1024x576.jpg"
-                alt="Pine forest and hiking path in Forêt des Pins">
+            <h2>4. Forêt des Pins and La Selle National Park</h2>
 
             <p>
-                Forêt des Pins is a high-elevation forest located in
-                southeastern Haiti near the Dominican Republic border.
+                Forêt des Pins is a mountain forest located near the
+                Haitian-Dominican border. It is known for tall pine trees,
+                cool mountain air, hiking trails, and biodiversity.
             </p>
 
-            <p>
-                The forest contains tall pine trees and a cooler climate
-                than many other parts of Haiti.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                The area is part of the larger La Selle National Park
-                landscape and is an important destination for hiking,
-                nature, and biodiversity.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2019/03/foret-des-pins-anton-lau1-1024x576.jpg"
+                        alt="Pine trees and hiking path in Forêt des Pins"
+                        loading="lazy">
+                    <figcaption>
+                        Forêt des Pins — Photo: Anton Lau
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Anton Lau /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
-        <!-- 5. Sans-Souci Palace -->
+        <!-- 5. Sans Souci Palace -->
         <section>
-
-            <h2>5. Sans-Souci Palace</h2>
-
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/07/sans-souci-palace-cap-haitien-jean-oscar-augustin-1.jpg"
-                alt="Historic ruins of Sans-Souci Palace surrounded by mountains">
+            <h2>5. Sans Souci Palace</h2>
 
             <p>
-                Sans-Souci Palace is located near Milot in northern
-                Haiti.
+                Sans Souci Palace is a historic site near Cap-Haïtien and
+                Milot. The palace was built between 1810 and 1813 during
+                the reign of King Henri Christophe. It represents an
+                important part of Haiti's history and architectural heritage.
             </p>
 
-            <p>
-                The palace was built between 1810 and 1813 during the
-                reign of King Henri Christophe.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                Today, the ruins are an important part of Haiti's
-                architectural and historical heritage.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/07/sans-souci-palace-cap-haitien-jean-oscar-augustin-1-1024x510.jpg"
+                        alt="Historic ruins of Sans Souci Palace surrounded by green mountains"
+                        loading="lazy">
+                    <figcaption>
+                        Sans Souci Palace — Photo: Jean Oscar Augustin
+                    </figcaption>
+                </figure>
 
-            <p>
-                The palace is located near the Citadelle Laferrière,
-                making the area an important destination for learning
-                about Haiti's history.
-            </p>
-
-            <p>
-                <strong>Photo:</strong> Jean Oscar Augustin /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
         <!-- 6. Île à Rat -->
         <section>
-
             <h2>6. Île à Rat</h2>
 
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/03/Ile-a-Rat-beach-jean-oscar-augustin-1024x468.jpg"
-                alt="Aerial view of Île à Rat island with turquoise water and sandy beach">
-
             <p>
-                Île à Rat is a small island located off the northern
-                coast of Haiti.
+                Île à Rat is a small island off the northern coast of Haiti.
+                The island is known for its white sand, clear turquoise water,
+                coral reefs, and tropical scenery. Visitors can enjoy
+                activities such as snorkeling and swimming.
             </p>
 
-            <p>
-                The island is surrounded by clear Caribbean water and
-                has sandy beaches and tropical vegetation.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                Visitors can enjoy activities such as swimming,
-                snorkeling, diving, and relaxing along the beach.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/03/Ile-a-Rat-beach-jean-oscar-augustin-1024x468.jpg"
+                        alt="Aerial view of Île à Rat with turquoise water and sandy beach"
+                        loading="lazy">
+                    <figcaption>
+                        Île à Rat — Photo: Jean Oscar Augustin
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Jean Oscar Augustin /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
         <!-- 7. Saut Mathurine -->
         <section>
-
             <h2>7. Saut Mathurine</h2>
 
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2019/03/waterfall-saut-mathurine-ricardo-lartigue_hero-1024x426.jpg"
-                alt="Saut Mathurine waterfall surrounded by green forest">
-
             <p>
-                Saut Mathurine is a large waterfall located in Haiti's
-                South Department between Les Cayes and Jérémie.
+                Saut Mathurine is a large waterfall located in southern Haiti
+                between Les Cayes and Jérémie. The waterfall flows into a
+                natural basin surrounded by mountains and vegetation.
             </p>
 
-            <p>
-                During the rainy season, the waterfall becomes larger
-                as water flows over the surrounding rocks and into the
-                natural basin below.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                The site is surrounded by tropical vegetation and
-                provides visitors with an opportunity to experience
-                Haiti's natural environment.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2019/03/waterfall-saut-mathurine-ricardo-lartigue_hero-1024x426.jpg"
+                        alt="Saut Mathurine waterfall surrounded by green forest"
+                        loading="lazy">
+                    <figcaption>
+                        Saut Mathurine — Photo: Ricardo Lartigue
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Ricardo Lartigue /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
         <!-- 8. Grotte Marie Jeanne -->
         <section>
-
             <h2>8. Grotte Marie Jeanne</h2>
 
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2022/10/grotte-marie-jeanne-cave-cavesofhaiti-1024x465.jpg"
-                alt="Large underground chamber inside Grotte Marie Jeanne">
-
             <p>
-                Grotte Marie Jeanne is located near Port-à-Piment in
-                southern Haiti.
+                Grotte Marie Jeanne is a large cave located in Port-a-Piment
+                in southern Haiti. The cave contains many chambers and
+                underground galleries with impressive natural rock formations.
             </p>
 
-            <p>
-                The cave contains long underground passages, chambers,
-                stalactites, and other natural rock formations.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                The cave is also connected to Haitian history because
-                it is named after Marie-Jeanne Lamartinière, a woman
-                who fought during the Haitian Revolution.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2022/10/grotte-marie-jeanne-cave-cavesofhaiti-1024x465.jpg"
+                        alt="Inside Grotte Marie Jeanne showing large cave formations"
+                        loading="lazy">
+                    <figcaption>
+                        Grotte Marie Jeanne — Photo: CavesOfHaiti.org
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> CavesOfHaiti.org /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
-        <!-- 9. Côtes des Arcadins -->
+        <!-- 9. Côte des Arcadins -->
         <section>
-
-            <h2>9. Côtes des Arcadins</h2>
-
-            <img
-                src="https://visithaiti.com/wp-content/uploads/2023/03/beach-cote-des-arcadins-jean-oscar-augustin-1024x489.jpg"
-                alt="Côtes des Arcadins beach with palm trees and Caribbean water">
+            <h2>9. Côte des Arcadins</h2>
 
             <p>
-                Côtes des Arcadins is a coastal destination along
-                Haiti's northern bay near Port-au-Prince.
+                Côte des Arcadins is a coastal destination known for its
+                beaches, blue water, palm trees, resorts, and water activities.
+                The area provides visitors with a tropical Caribbean setting.
             </p>
 
-            <p>
-                The area is known for sandy beaches, tropical scenery,
-                blue Caribbean water, and water activities.
-            </p>
+            <div class="place-gallery">
 
-            <p>
-                Visitors can enjoy the coastline and explore nearby
-                communities such as Montrouis.
-            </p>
+                <figure>
+                    <img
+                        src="https://visithaiti.com/wp-content/uploads/2023/03/beach-cote-des-arcadins-jean-oscar-augustin-1024x489.jpg"
+                        alt="Beach and resort along Côte des Arcadins"
+                        loading="lazy">
+                    <figcaption>
+                        Côte des Arcadins — Photo: Jean Oscar Augustin
+                    </figcaption>
+                </figure>
 
-            <p>
-                <strong>Photo:</strong> Jean Oscar Augustin /
-                Visit Haiti
-            </p>
-
+            </div>
         </section>
 
 
-        <!-- More Places -->
+        <!-- More destinations -->
         <section>
-
             <h2>More Places to Explore</h2>
 
             <p>
-                Haiti has many other destinations worth learning about.
-                Some additional locations include:
-            </p>
-
-            <ul>
-                <li>Citadelle Laferrière</li>
-                <li>Bassin Bleu</li>
-                <li>Jacmel</li>
-                <li>Jérémie</li>
-                <li>Les Cayes</li>
-                <li>Port-Salut</li>
-                <li>Labadee</li>
-                <li>Fort-Jacques</li>
-            </ul>
-
-        </section>
-
-
-        <!-- Source -->
-        <section>
-
-            <h2>Source</h2>
-
-            <p>
-                The destinations and information on this page were
-                researched using Visit Haiti's article
-                <em>Nine of the Most Beautiful Destinations in Haiti</em>.
+                Haiti has many other interesting destinations to explore,
+                including Citadelle Laferrière, Bassin Bleu, Jacmel,
+                Jérémie, Les Cayes, Labadee, and other historic and natural
+                attractions.
             </p>
 
             <p>
-                <a
-                    href="https://visithaiti.com/destinations/most-beautiful-destinations-in-haiti/"
-                    target="_blank"
-                    rel="noopener">
-                    Visit Haiti: Nine of the Most Beautiful Destinations in Haiti
-                </a>
+                Return to the
+                <a href="index.html">Home page</a>
+                to learn more about Haiti's history, culture, and attractions.
             </p>
-
-            <p>
-                <strong>Image credits:</strong>
-                The photographs displayed on this page are credited to
-                the photographers and organizations identified by Visit
-                Haiti on the original article.
-            </p>
-
         </section>
 
     </main>
 
 
-    <!-- Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 Haiti Website Project
-        </p>
+        <p>&copy; 2026 Haiti Website Project</p>
 
         <p>
             <a href="index.html">Home</a> |
@@ -468,9 +367,7 @@
             <a href="accessibility.html">Accessibility</a> |
             <a href="contactus.html">Contact</a>
         </p>
-
     </footer>
 
 </body>
-
 </html>
