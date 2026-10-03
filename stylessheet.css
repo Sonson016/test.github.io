@@ -1,9 +1,8 @@
-/* =========================
-   Haiti Website Stylesheet
-   Haitian Blue, Red & White
-   ========================= */
+/* ========================================
+   HAITI WEBSITE - MAIN STYLESHEET
+   ======================================== */
 
-/* Page */
+/* Basic page styling */
 body {
     margin: 0;
     padding: 0;
@@ -14,22 +13,20 @@ body {
     background-color: #ffffff;
 }
 
-
 /* Header */
 header {
     background-color: #003f87;
-    color: #ffffff;
+    color: white;
     text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid #d21034;
+    padding: 25px 20px;
+    border-bottom: 6px solid #d21034;
 }
 
 header h1 {
     margin: 0 0 20px 0;
-    color: #ffffff;
     font-size: 32px;
+    color: white;
 }
-
 
 /* Navigation */
 .navbar {
@@ -38,39 +35,35 @@ header h1 {
 }
 
 .nav-links {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
     margin: 0;
-    padding: 0;
 }
 
 .nav-links a {
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: bold;
+    display: block;
+    color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 5px;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ffffff;
+    background-color: white;
     color: #003f87;
-    text-decoration: none;
 }
 
-
-/* Keyboard accessibility */
+/* Skip link */
 .skip-link {
     position: absolute;
     left: -10000px;
@@ -87,54 +80,51 @@ header h1 {
     width: auto;
     height: auto;
     padding: 10px 15px;
-    background-color: #ffffff;
+    background-color: white;
     color: #003f87;
     border: 3px solid #d21034;
     z-index: 1000;
 }
 
-
 /* Main content */
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 20px;
 }
 
+/* Sections */
 section {
-    margin-bottom: 35px;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 22px;
     background-color: #f5f8fc;
-    border-left: 5px solid #003f87;
+    border-left: 6px solid #003f87;
     border-radius: 6px;
 }
 
-
-/* Headings */
-h1 {
-    color: #003f87;
+section:nth-child(even) {
+    border-left-color: #d21034;
 }
 
+/* Headings */
 h2 {
-    color: #d21034;
     margin-top: 0;
-    margin-bottom: 15px;
+    color: #d21034;
 }
 
 h3 {
     color: #003f87;
 }
 
-
 /* Paragraphs */
 p {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
-
 /* Lists */
-ul {
+ul,
+ol {
     padding-left: 30px;
 }
 
@@ -142,17 +132,15 @@ li {
     margin-bottom: 8px;
 }
 
-
 /* Images */
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
     margin: 15px 0;
     border: 3px solid #003f87;
     border-radius: 6px;
 }
-
 
 /* Links */
 a {
@@ -162,22 +150,20 @@ a {
 a:hover,
 a:focus {
     color: #d21034;
-    text-decoration: underline;
 }
-
 
 /* Tables */
 table {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
 caption {
     color: #003f87;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -190,24 +176,22 @@ td {
 
 th {
     background-color: #003f87;
-    color: #ffffff;
+    color: white;
 }
 
 tr:nth-child(even) {
     background-color: #f5f8fc;
 }
 
-
 /* Forms */
 form {
     max-width: 700px;
 }
 
-form p {
-    margin-bottom: 20px;
-}
-
 label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: bold;
     color: #003f87;
 }
@@ -221,39 +205,48 @@ textarea {
     max-width: 600px;
     box-sizing: border-box;
     padding: 10px;
-    margin-top: 6px;
     border: 2px solid #003f87;
-    border-radius: 4px;
+    border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #ffffff;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
 select:focus,
 textarea:focus {
-    border-color: #d21034;
+    outline: 3px solid #d21034;
+    outline-offset: 2px;
 }
 
-
-/* Radio buttons and checkboxes */
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 6px;
+/* Rating */
+.rating-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0 20px 0;
 }
 
+.rating-options label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+    color: #222222;
+}
 
 /* Buttons */
 button,
 input[type="submit"] {
-    padding: 10px 18px;
-    margin: 5px 5px 5px 0;
+    padding: 11px 18px;
+    margin: 10px 10px 10px 0;
     background-color: #003f87;
-    color: #ffffff;
+    color: white;
     border: 2px solid #003f87;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -267,8 +260,7 @@ input[type="submit"]:focus {
     border-color: #d21034;
 }
 
-
-/* Accessibility buttons */
+/* Accessibility controls */
 .accessibility-controls {
     display: flex;
     flex-wrap: wrap;
@@ -276,56 +268,32 @@ input[type="submit"]:focus {
     margin: 20px 0;
 }
 
-.accessibility-controls button {
-    margin: 0;
-}
-
-
-/* Audio player */
+/* Audio */
 audio {
     width: 100%;
     max-width: 500px;
-    margin: 10px 0 20px 0;
 }
-
-
-/* Focus indicator */
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 3px solid #d21034;
-    outline-offset: 2px;
-}
-
 
 /* Footer */
 footer {
     margin-top: 40px;
-    padding: 25px;
+    padding: 25px 20px;
     text-align: center;
     background-color: #003f87;
-    color: #ffffff;
-    border-top: 5px solid #d21034;
-}
-
-footer p {
-    margin: 8px 0;
+    color: white;
+    border-top: 6px solid #d21034;
 }
 
 footer a {
-    color: #ffffff;
+    color: white;
 }
 
 footer a:hover,
 footer a:focus {
-    color: #ffffff;
-    text-decoration: underline;
+    color: white;
 }
 
-
-/* Mobile screens */
+/* Mobile layout */
 @media screen and (max-width: 700px) {
 
     header h1 {
@@ -334,30 +302,28 @@ footer a:focus {
 
     .nav-links {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        align-items: stretch;
     }
 
     .nav-links a {
-        display: block;
-        font-size: 17px;
+        text-align: center;
     }
 
     main {
-        padding: 20px;
+        padding: 20px 15px;
     }
 
     section {
-        padding: 15px;
+        padding: 18px;
     }
 
-    table {
-        font-size: 14px;
+    .rating-options {
+        flex-direction: column;
+        gap: 5px;
     }
 
     .accessibility-controls {
         flex-direction: column;
-        align-items: stretch;
     }
 
     .accessibility-controls button {
