@@ -2,285 +2,384 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Accessibility Considerations - Haiti</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="stylesheets.css">
+    <title>Accessibility Considerations - Haiti</title>
+
+    <link rel="stylesheet" href="stylesheets.css">
 </head>
+
 
 <body>
 
-   <!-- Skip link for keyboard users -->
-   <a class="skip-link" href="#main-content">Skip to main content</a>
-
-   <header>
-      <h1>Accessibility Considerations</h1>
-
-      <nav class="navbar" aria-label="Main navigation">
-         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="accessibility.html">Accessibility Considerations</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-         </ul>
-      </nav>
-   </header>
-
-   <main id="main-content">
-
-      <!-- Introduction -->
-      <section>
-         <h2>Making My Website Accessible</h2>
-
-         <p>
-            I designed my Haiti website with accessibility in mind so that
-            different types of users can access and understand the information.
-            I use clear headings, readable text, descriptive links, alternative
-            text for images, and organized sections throughout the website.
-         </p>
-
-         <p>
-            My goal is to make the website easier to use for visitors with
-            different needs and abilities.
-         </p>
-      </section>
-
-
-      <!-- Sound and Page Reading -->
-      <section>
-         <h2>Sound, Screen Description, and Page Reading</h2>
-
-         <p>
-            This website provides accessibility options that allow visitors
-            to listen to information on the page. Users can choose to hear
-            a description of the page or have the page text read aloud.
-         </p>
-
-         <div class="accessibility-controls">
-
-            <button type="button" onclick="readDescription()">
-               🔊 Read Screen Description
-            </button>
-
-            <button type="button" onclick="readPage()">
-               📖 Read This Page
-            </button>
-
-            <button type="button" onclick="stopReading()">
-               ⏹ Stop Reading
-            </button>
-
-         </div>
-
-         <p>
-            The screen description provides a summary of the page, while the
-            page reading option reads the written content on the page aloud.
-         </p>
-      </section>
-
-
-      <!-- Audio Description -->
-      <section>
-         <h2>Audio Description</h2>
-
-         <p>
-            Visitors can use the audio player below to listen to an audio
-            description about accessibility on this website.
-         </p>
-
-         <audio controls>
-            <source src="haiti-description.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-         </audio>
-
-         <p>
-            If the audio file is not available, the Read Screen Description
-            or Read This Page buttons can be used instead.
-         </p>
-      </section>
-
-
-      <!-- Accessibility Features -->
-      <section>
-         <h2>Accessibility Features</h2>
-
-         <ul>
-
-            <li>
-               <strong>Alternative Text:</strong>
-               Images include descriptive alt text so screen readers can
-               describe the images to users.
-            </li>
-
-            <li>
-               <strong>Keyboard Navigation:</strong>
-               Links, buttons, and form controls can be accessed using
-               the keyboard without requiring a mouse.
-            </li>
-
-            <li>
-               <strong>Readable Text:</strong>
-               The website uses readable text and sufficient spacing
-               between sections.
-            </li>
-
-            <li>
-               <strong>Proper Headings:</strong>
-               Headings are organized using h1 and h2 elements to create
-               a logical page structure.
-            </li>
-
-            <li>
-               <strong>Descriptive Links:</strong>
-               Links clearly explain where they will take the visitor.
-            </li>
-
-            <li>
-               <strong>Color and Contrast:</strong>
-               Text and backgrounds are designed to provide enough contrast
-               for easier reading.
-            </li>
-
-            <li>
-               <strong>Form Labels:</strong>
-               Form fields on the Contact Us page have labels to help
-               visitors understand what information should be entered.
-            </li>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-            <li>
-               <strong>Page Reading:</strong>
-               Visitors can use the page-reading button to have the main
-               content read aloud.
-            </li>
 
-            <li>
-               <strong>Screen Description:</strong>
-               Visitors can listen to a short description explaining
-               the purpose and accessibility features of this page.
-            </li>
+    <header>
 
-         </ul>
-      </section>
+        <h1>Accessibility Considerations</h1>
 
+        <nav class="navbar" aria-label="Main navigation">
 
-      <!-- Accessible Images -->
-      <section>
-         <h2>Example of Accessible Images</h2>
+            <ul class="nav-links">
 
-         <p>
-            The image below includes alternative text that describes what
-            appears in the photograph.
-         </p>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/76/Citadelle_Laferrière.jpg"
-            width="300"
-            height="200"
-            alt="Citadelle Laferrière historic fortress in Haiti">
+                <li>
+                    <a href="aboutus.html">About Haiti</a>
+                </li>
 
-         <p>
-            The alt text allows a screen reader to communicate the purpose
-            and subject of the image to someone who cannot see it.
-         </p>
-      </section>
+                <li>
+                    <a href="accessibility.html">Accessibility</a>
+                </li>
 
+                <li>
+                    <a href="contactus.html">Contact</a>
+                </li>
 
-      <!-- WCAG -->
-      <section>
-         <h2>WCAG Guidelines</h2>
+            </ul>
 
-         <p>
-            My website follows basic principles from the Web Content
-            Accessibility Guidelines (WCAG). These principles include making
-            content perceivable, operable, understandable, and robust.
-            Accessibility helps make the website easier for people with
-            different abilities to use.
-         </p>
-      </section>
+        </nav>
 
+    </header>
 
-      <!-- Contact -->
-      <section>
-         <h2>Accessibility Feedback</h2>
 
-         <p>
-            If you have difficulty using this website or have suggestions
-            for improving accessibility, please visit our Contact Us page.
-         </p>
+    <main id="main-content">
 
-         <p>
-            <a href="contactus.html">Contact Us with accessibility feedback</a>
-         </p>
-      </section>
 
-   </main>
+        <!-- Introduction -->
+        <section>
 
+            <h2>Making My Website Accessible</h2>
 
-   <footer>
-      <p>
-         &copy; 2026 Haiti Website Project
-      </p>
+            <p>
+                I designed my Haiti website with accessibility in mind so
+                that different types of users can access and understand
+                the information.
+            </p>
 
-      <p>
-         <a href="index.html">Return to the Haiti Home Page</a>
-      </p>
-   </footer>
+            <p>
+                I use clear headings, readable text, descriptive links,
+                alternative text for images, and organized sections
+                throughout the website.
+            </p>
 
+            <p>
+                My goal is to make the website easier to use for visitors
+                with different needs and abilities.
+            </p>
 
-   <!-- Page Reading JavaScript -->
-   <script>
+        </section>
 
-      function readDescription() {
 
-         const description =
-            "This is the Accessibility Considerations page for the Haiti website. " +
-            "This page explains accessibility features including alternative text, " +
-            "keyboard navigation, readable text, proper headings, descriptive links, " +
-            "color contrast, form labels, sound descriptions, and page reading.";
+        <!-- Accessibility Tools -->
+        <section>
 
-         speakText(description);
-      }
+            <h2>Accessibility Tools</h2>
 
+            <p>
+                This website provides tools that allow visitors to listen
+                to information on the page. These tools can be helpful
+                for visitors who have difficulty reading the written
+                information on the screen.
+            </p>
 
-      function readPage() {
 
-         const pageText = document.querySelector("#main-content").innerText;
+            <div class="accessibility-controls">
 
-         speakText(pageText);
-      }
+                <button
+                    type="button"
+                    onclick="readDescription()">
+                    🔊 Read Screen Description
+                </button>
 
 
-      function speakText(text) {
+                <button
+                    type="button"
+                    onclick="readPage()">
+                    📖 Read This Page
+                </button>
 
-         if ("speechSynthesis" in window) {
 
-            window.speechSynthesis.cancel();
+                <button
+                    type="button"
+                    onclick="stopReading()">
+                    ⏹ Stop Reading
+                </button>
 
-            const speech = new SpeechSynthesisUtterance(text);
+            </div>
 
-            speech.rate = 1;
-            speech.pitch = 1;
 
-            window.speechSynthesis.speak(speech);
+            <p>
+                The screen description provides a short summary of this
+                page. The page-reading option reads the written content
+                on the page aloud.
+            </p>
 
-         } else {
+        </section>
 
-            alert("Text-to-speech is not supported by your browser.");
 
-         }
-      }
+        <!-- Audio Description -->
+        <section>
 
+            <h2>Audio Description</h2>
 
-      function stopReading() {
+            <p>
+                Visitors can use the audio player below to listen to an
+                audio description about accessibility on this website.
+            </p>
 
-         if ("speechSynthesis" in window) {
-            window.speechSynthesis.cancel();
-         }
 
-      }
+            <audio controls>
+                <source
+                    src="haiti-description.mp3"
+                    type="audio/mpeg">
 
-   </script>
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <p>
+                If the audio file is not available, visitors can use the
+                Read Screen Description or Read This Page buttons instead.
+            </p>
+
+        </section>
+
+
+        <!-- Accessibility Features -->
+        <section>
+
+            <h2>Accessibility Features</h2>
+
+            <p>
+                The following accessibility features are included in
+                my website:
+            </p>
+
+
+            <ul>
+
+                <li>
+                    <strong>Alternative Text:</strong>
+                    Images include descriptive alt text so screen readers
+                    can describe the images to visitors.
+                </li>
+
+
+                <li>
+                    <strong>Keyboard Navigation:</strong>
+                    Links, buttons, and form controls can be accessed
+                    using a keyboard without requiring a mouse.
+                </li>
+
+
+                <li>
+                    <strong>Readable Text:</strong>
+                    The website uses readable text, appropriate spacing,
+                    and organized sections.
+                </li>
+
+
+                <li>
+                    <strong>Proper Headings:</strong>
+                    Headings are organized using h1 and h2 elements to
+                    create a logical page structure.
+                </li>
+
+
+                <li>
+                    <strong>Descriptive Links:</strong>
+                    Links clearly explain where they will take visitors.
+                </li>
+
+
+                <li>
+                    <strong>Color and Contrast:</strong>
+                    Text and backgrounds use contrasting colors to make
+                    information easier to read.
+                </li>
+
+
+                <li>
+                    <strong>Form Labels:</strong>
+                    Form fields on the Contact page have labels to help
+                    visitors understand what information should be entered.
+                </li>
+
+
+                <li>
+                    <strong>Page Reading:</strong>
+                    Visitors can use the page-reading button to have the
+                    main content read aloud.
+                </li>
+
+
+                <li>
+                    <strong>Screen Description:</strong>
+                    Visitors can listen to a short description explaining
+                    the purpose and accessibility features of this page.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Accessible Images -->
+        <section>
+
+            <h2>Accessible Images</h2>
+
+            <p>
+                Images on the website include alternative text. Alternative
+                text helps visitors who use screen readers understand the
+                subject and purpose of an image.
+            </p>
+
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/76/Citadelle_Laferrière.jpg"
+                width="300"
+                height="200"
+                alt="Citadelle Laferrière, a historic fortress in Haiti">
+
+
+            <p>
+                The alternative text describes the image so that a screen
+                reader can communicate information about the photograph
+                to someone who cannot see it.
+            </p>
+
+        </section>
+
+
+        <!-- WCAG -->
+        <section>
+
+            <h2>Web Content Accessibility Guidelines</h2>
+
+            <p>
+                My website follows basic principles from the Web Content
+                Accessibility Guidelines, also known as WCAG.
+            </p>
+
+            <p>
+                WCAG focuses on making web content perceivable, operable,
+                understandable, and robust. Following these principles
+                helps make websites easier for people with different
+                abilities to use.
+            </p>
+
+        </section>
+
+
+        <!-- Accessibility Feedback -->
+        <section>
+
+            <h2>Accessibility Feedback</h2>
+
+            <p>
+                If you have difficulty using this website or have
+                suggestions for improving accessibility, please contact us.
+            </p>
+
+
+            <p>
+                <a href="contactus.html">
+                    Contact Us with accessibility feedback
+                </a>
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Haiti Website Project
+        </p>
+
+
+        <p>
+            <a href="index.html">
+                Return to the Haiti Home Page
+            </a>
+        </p>
+
+    </footer>
+
+
+    <!-- Page Reading JavaScript -->
+    <script>
+
+        function readDescription() {
+
+            const description =
+                "This is the Accessibility Considerations page " +
+                "for the Haiti website. This page explains " +
+                "accessibility features including alternative text, " +
+                "keyboard navigation, readable text, proper headings, " +
+                "descriptive links, color contrast, form labels, " +
+                "screen descriptions, and page reading.";
+
+            speakText(description);
+        }
+
+
+        function readPage() {
+
+            const pageText =
+                document.querySelector("#main-content").innerText;
+
+            speakText(pageText);
+        }
+
+
+        function speakText(text) {
+
+            if ("speechSynthesis" in window) {
+
+                window.speechSynthesis.cancel();
+
+                const speech =
+                    new SpeechSynthesisUtterance(text);
+
+                speech.rate = 1;
+                speech.pitch = 1;
+
+                window.speechSynthesis.speak(speech);
+
+            } else {
+
+                alert(
+                    "Text-to-speech is not supported by your browser."
+                );
+
+            }
+        }
+
+
+        function stopReading() {
+
+            if ("speechSynthesis" in window) {
+
+                window.speechSynthesis.cancel();
+
+            }
+        }
+
+    </script>
+
 
 </body>
 
